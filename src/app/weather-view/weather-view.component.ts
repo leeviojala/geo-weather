@@ -10,8 +10,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./weather-view.component.sass']
 })
 export class WeatherViewComponent implements OnInit {
-  private weatherCity: Observable<string>;
-  private weatherTemp: Observable<string>;
+   weatherCity: Observable<string>;
+   weatherTemp: Observable<string>;
 
   constructor(private weatherService: WeatherService) { }
 

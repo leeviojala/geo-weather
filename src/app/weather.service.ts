@@ -23,7 +23,7 @@ export class WeatherService {
     // tslint:disable-next-line:max-line-length
     console.log('lulwatä');
     // tslint:disable-next-line:max-line-length
-    this.http.get('http://api.openweathermap.org/data/2.5/weather?lat=' + this.lat + '&lon=' + this.lon + '&appid=453382cec788339c262b0ffbf0ec4ff0')
+    this.http.get('https://api.openweathermap.org/data/2.5/weather?lat=' + this.lat + '&lon=' + this.lon + '&appid=453382cec788339c262b0ffbf0ec4ff0')
         .subscribe( (weatherData: any) => {
           this.tempNumber = parseFloat(weatherData.main.temp);
           console.log(this.tempNumber);
